@@ -1,0 +1,16 @@
+<%= form_for @user, method: :patch do |f| %>
+
+<p><%= f.label "FirstName" %></p>
+<%= f.text_field :firstname %><br />
+
+<p><%= f.label "LastName" %></p>
+<%= f.text_field :lastname %><br />
+
+<p><%= f.label :email %></p>
+<%= f.text_field :email %><br />
+
+<p><%= f.label :password %></p>
+<%= f.password_field :password %><br />
+
+<%= f.submit "save" %>
+<% end %>
