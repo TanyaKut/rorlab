@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: postgresql-pointy-79164_production
+  username: postgresql-pointy-79164
+  password: <%= ENV ['MYAPP_DATABASE_PASSWORD'] %>
